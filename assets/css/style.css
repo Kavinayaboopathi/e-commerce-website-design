@@ -1,0 +1,336 @@
+/* General Reset & Base Styling */
+/* ========== Header / Navbar ========== */
+
+/* ========== Header / Navbar Styling ========== */
+/* style.css */
+
+body {
+  padding-top: 80px; /* Adjust if navbar height changes */
+}
+
+.navbar-nav .nav-link {
+      margin: 0 10px;
+      font-weight: 500;
+      color: #555;
+    }
+
+    .navbar-nav .nav-link.active {
+      font-weight: bold;
+      color: #000;
+    }
+
+    .cart-icon {
+      position: relative;
+    }
+
+    .cart-icon .badge {
+      position: absolute;
+      top: -8px;
+      right: -12px;
+      font-size: 11px;
+    }
+
+    .navbar {
+      background-color: #f8f9fa;
+       padding-top: 0.3rem;
+       padding-bottom: 0.3rem;
+    }
+
+    @media (max-width: 767.98px) {
+      .navbar-nav {
+        flex-wrap: wrap;
+        justify-content: center !important;
+      }
+    }
+
+    /* Carousel section styling */
+.header_carousel {
+  margin-top: 20px;
+  overflow: hidden;
+}
+
+/* Make carousel images look cleaner and modern */
+.carousel-inner img {
+  border-radius: 10px;
+  object-fit: cover;
+  height: 500px;
+  width: 100%;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  transition: transform 0.5s ease;
+}
+
+/* Add a zoom effect on slide transition */
+.carousel-item.active img {
+  transform: scale(1.01);
+}
+
+/* Hide controls on small screens if needed */
+@media (max-width: 576px) {
+  .carousel-inner img {
+    height: 250px;
+  }
+
+  .carousel-control-prev-icon,
+  .carousel-control-next-icon {
+    background-size: 50% 50%;
+  }
+}
+
+/* Optional: Center the carousel section if needed */
+.header_carousel .carousel {
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* Shop By Category Section */
+.shop_by_category h1 {
+  font-weight: 600;
+  color: #333;
+}
+
+.category-card img {
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+  height: 300px;
+  object-fit: cover;
+}
+
+.category-card img:hover {
+  transform: scale(1.03);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+.single_product img {
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+  height: 300px;
+  object-fit: cover;
+}
+
+.single_product img:hover {
+  transform: scale(1.05);
+}
+
+.product-rating i {
+  font-size: 16px;
+}
+
+.feature-card i {
+  transition: transform 0.3s ease;
+}
+
+.feature-card:hover i {
+  transform: scale(1.2);
+}
+
+.feature-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.feature-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+}
+
+.footer_section {
+  background-color: #1f1f1f;
+}
+
+.footer_links li {
+  margin-bottom: 0.5rem;
+}
+
+.footer_links a:hover {
+  color: #ffc107;
+  text-decoration: underline;
+}
+
+.backtop a {
+  width: 45px;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+*{
+  scroll-behavior: smooth;
+}
+
+
+
+/* product.html css */
+.product-ratting i {
+    color: #ffc107;
+  }
+
+  .new_product .badge {
+    font-size: 0.75rem;
+    font-weight: bold;
+  }
+
+  .card .price {
+    color: #28a745;
+    font-size: 1.1rem;
+  }
+
+  .card-title a:hover {
+    color: #007bff;
+  }
+
+  .list-group-item {
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+  }
+
+  .list-group-item:hover {
+    background-color: #f8f9fa;
+  }
+
+  .form-range {
+    accent-color: #007bff;
+  }
+
+  @media (max-width: 767px) {
+    .products .row > div {
+      margin-bottom: 1.5rem;
+    }
+  }
+
+
+/* product detail */
+.carousel-indicators li img {
+      height: 50px;
+      object-fit: cover;
+      margin: 5px;
+      border: 2px solid transparent;
+      cursor: pointer;
+    }
+
+  .carousel-image{
+   max-height: 80vh;          /* Responsive height */
+  width: auto;
+  object-fit: contain;       /* Prevents cropping */
+  display: block;
+  margin: 0 auto;
+   } 
+    .carousel-indicators .active img {
+      border-color: #007bff;
+    }
+    .product_detail h3,
+    .related_products h3 {
+      font-weight: bold;
+    }
+    .related_products h5 {
+      font-size: 1rem;
+    }
+    .rating i {
+      color: #ffc107;
+    }
+    .quantity {
+      width: 80px;
+      height: 38px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    .related_products .col-6 {
+      margin-bottom: 2rem;
+    }
+
+    .product-main-img {
+      max-height: 450px;
+      object-fit: cover;
+      object-position: center;
+    }
+
+    .product-thumb-img{
+      width: 60px;
+      height: 50px;
+      object-fit: cover;
+      margin: 5px;
+      border-radius: 5px ;
+      cursor: pointer;
+    }
+  .carousel-inner {
+  width: 100%;
+  max-height: 90vh; /* 90% of screen height, adjusts automatically */
+}
+
+.carousel-item img {
+  object-fit: contain; /* Makes image fit without cropping */
+  width: 100%;
+  height: auto;
+}
+/* checkoutpage */
+.bg_checkout_1 {
+      background-color: #f8f9fa;
+    }
+    .form-control:focus {
+      box-shadow: none;
+      border-color: #007bff;
+    }
+    .btn-primary {
+      background-color: #007bff;
+      border: none;
+    }
+    .btn-primary:hover {
+      background-color: #0056b3;
+    }
+    .list-group-item {
+      background-color: transparent;
+    }
+    /* orderconfirmation page */
+body {
+      background-color: #f8f9fa;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    .order_confirmation {
+      background-color: #fff;
+      border-radius: 10px;
+      padding: 40px 20px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .order_confirmation img {
+      max-width: 150px;
+      margin-bottom: 20px;
+    }
+
+    .order_confirmation h2 {
+      font-size: 28px;
+      color: #28a745;
+      margin-bottom: 15px;
+    }
+
+    .order_confirmation h6 {
+      font-size: 16px;
+      margin-bottom: 10px;
+    }
+
+    .order_confirmation .btn-primary {
+      padding: 10px 30px;
+      font-size: 18px;
+    }
+    
+    /* for about us page */
+     .about_text p {
+      text-align: justify;
+    }
+    .testimonial .avatar img {
+      width: 120px;
+      height: 120px;
+      object-fit: cover;
+    }
+    .testimonial p {
+      font-style: italic;
+    }
+    .carousel-inner {
+      min-height: 300px;
+    }
+    .carousel-control-prev-icon,
+    .carousel-control-next-icon {
+      background-color: rgba(0,0,0,0.5);
+      padding: 15px;
+      border-radius: 50%;
+    }
